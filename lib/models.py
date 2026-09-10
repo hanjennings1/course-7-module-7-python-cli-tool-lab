@@ -35,8 +35,9 @@ class User:
 
     def get_task_by_title(self, title):
         # Search for a task by its title in the user's task list
-        for task in self.task:
+        for task in self.tasks:
         # Return the matching task or None
             if task.title == title:
                 return task
         return None
+    
